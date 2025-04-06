@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime Haven</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e0e0e0;
+            width: 100%;
+            overflow-x: hidden;
+        }
+        .header {
+            background-color: black;
+            color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+        }
+        .ceo {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            padding: 20px;
+            background-color: #7e7e7e;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        .ceo img {
+            width: 260px;
+            height: 260px;
+            border-radius: 10px;
+        }
+        .container-ceo {
+            width: 100%;
+            margin: 20px auto;
+            padding: 10px;
+            background-color: #454545;
+            
+        }
+        .intro-text {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: white;
+            padding: 30px;
+        }
+        .container {
+            width: 100%;
+            margin: 20px auto;
+            padding: 10px;
+            background-color: #454545;
+        
+        }
+        .section {
+            background: gray;
+            padding: 15px;
+            margin: 10px 0;
+            color: black;
+            font-weight: bold;
+            text-align: center;
+            font-size: 2.5em;
+        }
+        .anime-list {
+            display: grid;
+            grid-template-columns: repeat(10, 1fr);
+            gap: 10px;
+            padding: 20px;
+        }
+        .anime-item {
+            height: auto;
+            width: auto;
+            background: white;
+            border-radius: 8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden; /* Ensures the image doesn't overflow */
+        }
+
+        .anime-item img {
+            width: 100%; /* Makes the image take the full width */
+            height: 100%; /* Makes the image take the full height */
+            object-fit: cover; /* Ensures the image covers the area without distortion */
+        }
+        .intro {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            padding: 40px;
+            background-color: #bfbfbf;
+            border-radius: 10px;
+            height: 300px;
+            margin-bottom: 20px;
+        }
+        .intro img {
+            width: 200px;
+            height: 200px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>ANIME HAVEN</h1>
+        <div class="nav-links">
+            <a href="#">HOME</a>
+            <a href="#">ABOUT US</a>
+            <a href="#">CONTACT US</a>
+        </div>
+    </div>
+    <div class="container-ceo">
+        <div class="ceo">
+            <img src="KEITH.jpg" alt="Keith">
+            <div class="intro-text">Hi, I’m Keith!<br>A Junior Front-end Developer</div>
+        </div>
+        <div class="ceo">
+            <img src="KEITH.jpg" alt="Lawrence">
+            <div class="intro-text">Hi, I’m Lawrence!<br>A Junior Front-end Developer</div>
+        </div>
+    </div>
+    <div class="section">ANIME HAVEN</div>
+    <div class="container">
+        <div class="intro">
+            <img src="sololeveling1.webp" alt="Solo Leveling">
+            <p>SOLO LEVELING</p>
+        </div>
+        <div class="intro">
+            <img src="TOG.jpg" alt="Tower of God">
+            <p>TOWER OF GOD</p>
+        </div>
+        <div class="intro">
+            <img src="DEMONSLAYER.jpg" alt="Demon Slayer">
+            <p>DEMON SLAYER</p>
+        </div>
+    </div>
+    <div class="section">ISEKAI ANIMES</div>
+    <div class="anime-list">
+        <div class="anime-item"><a href="https://www.example.com/" target="_blank">
+            <img src="SMARTPHONE.avif" alt="">
+        </a></div>
+        <div class="anime-item"><a href="https://www.example.com/" target="_blank">
+            <img src="GODSBLESSING.jpg" alt="">
+        </a></div>
+        <div class="anime-item"><a href="https://www.example.com/" target="_blank">
+            <img src="BLACKCLOVER.jpg" alt="">
+        </a></div>
+        <div class="anime-item"><a href="https://www.example.com/" target="_blank">
+            <img src="image.png" alt="">
+        </a></div>
+        <div class="anime-item"><a href="https://www.example.com/" target="_blank">
+            <img src="image.png" alt="">
+        </a></div>
+        <div class="anime-item"><a href="https://www.example.com/" target="_blank">
+            <img src="image.png" alt="">
+        </a></div>
+        <div class="anime-item"><a href="https://www.example.com/" target="_blank">
+            <img src="image.png" alt="">
+        </a></div>
+        <div class="anime-item"><a href="https://www.example.com/" target="_blank">
+            <img src="image.png" alt="">
+        </a></div>
+        <div class="anime-item"><a href="https://www.example.com/" target="_blank">
+            <img src="image.png" alt="">
+        </a></div>
+        <div class="anime-item"><a href="https://www.example.com/" target="_blank">
+            <img src="image.png" alt="">
+        </a></div>
+    </div>
+    <div class="section">ROMANCE ANIMES</div>
+    <div class="anime-list">
+        <div class="anime-item"><a href="https://www.example.com/" target="_blank">
+            <img src="image.png" alt="">
+        </a></div>
+        <div class="anime-item"><a href="https://www.example.com/" target="_blank">
+            <img src="image.png" alt="">
+        </a></div>
+        <div class="anime-item"><a href="https://www.example.com/" target="_blank">
+            <img src="image.png" alt="">
+        </a></div>
+        <div class="anime-item"><a href="https://www.example.com/" target="_blank">
+            <img src="image.png" alt="">
+        </a></div>
+        <div class="anime-item"><a href="https://www.example.com/" target="_blank">
+            <img src="image.png" alt="">
+        </a></div>
+        <div class="anime-item"><a href="https://www.example.com/" target="_blank">
+            <img src="image.png" alt="">
+        </a></div>
+        <div class="anime-item"><a href="https://www.example.com/" target="_blank">
+            <img src="image.png" alt="">
+        </a></div>
+        <div class="anime-item"><a href="https://www.example.com/" target="_blank">
+            <img src="image.png" alt="">
+        </a></div>
+        <div class="anime-item"><a href="https://www.example.com/" target="_blank">
+            <img src="image.png" alt="">
+        </a></div>
+        <div class="anime-item"><a href="https://www.example.com/" target="_blank">
+            <img src="image.png" alt="">
+        </a></div>
+    </div>
+    <div class="section">ADVENTURE ANIMES</div>
+    <div class="anime-list">
+        <div class="anime-item"><a href="https://www.example.com/" target="_blank">
+            <img src="image.png" alt="">
+        </a></div>
+        <div class="anime-item"><a href="https://www.example.com/" target="_blank">
+            <img src="image.png" alt="">
+        </a></div>
+        <div class="anime-item"><a href="https://www.example.com/" target="_blank">
+            <img src="image.png" alt="">
+        </a></div>
+        <div class="anime-item"><a href="https://www.example.com/" target="_blank">
+            <img src="image.png" alt="">
+        </a></div>
+        <div class="anime-item"><a href="https://www.example.com/" target="_blank">
+            <img src="image.png" alt="">
+        </a></div>
+        <div class="anime-item"><a href="https://www.example.com/" target="_blank">
+            <img src="image.png" alt="">
+        </a></div>
+        <div class="anime-item"><a href="https://www.example.com/" target="_blank">
+            <img src="image.png" alt="">
+        </a></div>
+        <div class="anime-item"><a href="https://www.example.com/" target="_blank">
+            <img src="image.png" alt="">
+        </a></div>
+        <div class="anime-item"><a href="https://www.example.com/" target="_blank">
+            <img src="image.png" alt="">
+        </a></div>
+        <div class="anime-item"><a href="https://www.example.com/" target="_blank">
+            <img src="image.png" alt="">
+        </a></div>
+    </div>
+    <footer class="section">© 2025 ANIME HAVEN. ALL RIGHTS RESERVED</footer>
+</body>
+</html>

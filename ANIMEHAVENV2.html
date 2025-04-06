@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANIME HAVEN</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #2c2c2c;
+            color: #fff;
+        }
+
+        header {
+            background: #242124;
+            padding: 15px 20px;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            flex-wrap: wrap;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+            transition: 0.3s;
+        }
+
+        .logo:hover {
+            color: #A9A9A9;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+            padding: 1rem;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #A9A9A9;
+        }
+
+        .hero {
+            position: relative;
+            background: url('banner.jpg') no-repeat center center/cover;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            text-align: left;
+            color: white;
+            width: 100%;
+            padding-left: 5%;
+        }
+
+        .hero-content {
+            background: rgba(60, 60, 60, 0.7);
+            padding: 30px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            z-index: 1;
+            max-width: 500px;
+            box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.8);
+        }
+
+        .hero-content h1 {
+            font-size: 2rem;
+        }
+
+        .hero-content p {
+            font-size: 1rem;
+        }
+
+        .hero-content a img {
+            width: 220px;
+            height: auto;
+            margin-top: 10px;
+            border-radius: 5px;
+            transition: transform 0.3s;
+        }
+
+        .hero-content a img:hover {
+            transform: scale(1.05);
+        }
+
+        .hero::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)), 
+                        url('HORIZONTAL2.jpg') no-repeat center center/cover;
+            z-index: 0;
+        }
+
+        .hero-content {
+            background: rgba(60, 60, 60, 0.7);
+            padding: 30px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            z-index: 1;
+            max-width: 500px;
+            box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.8);
+        }
+
+        .hero-content h1 {
+            font-size: 2rem;
+        }
+
+        .hero-content p {
+            font-size: 1rem;
+        }
+
+        .hero-content a img {
+            width: 220px;
+            height: auto;
+            margin-top: 10px;
+            border-radius: 5px;
+            transition: transform 0.3s;
+        }
+
+        .hero-content a img:hover {
+            transform: scale(1.05);
+        }
+
+        .tower {
+            position: relative;
+            background: url('banner.jpg') no-repeat center center/cover;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            text-align: left;
+            color: white;
+            width: 100%;
+            padding-left: 5%;
+        }
+
+        .god {
+            background: rgba(60, 60, 60, 0.7);
+            padding: 30px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            z-index: 1;
+            max-width: 500px;
+            box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.8);
+        }
+
+        .god h1 {
+            font-size: 2rem;
+        }
+
+        .god p {
+            font-size: 1rem;
+        }
+
+        .god a img {
+            width: 220px;
+            height: auto;
+            margin-top: 10px;
+            border-radius: 5px;
+            transition: transform 0.3s;
+        }
+
+        .god a img:hover {
+            transform: scale(1.05);
+        }
+
+        .tower::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)), 
+                        url('TOGHORIZONTAL.jpg') no-repeat center center/cover;
+            z-index: 0;
+        }
+
+        .god {
+            background: rgba(60, 60, 60, 0.7);
+            padding: 30px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            z-index: 1;
+            max-width: 500px;
+            box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.8);
+        }
+
+        .god h1 {
+            font-size: 2rem;
+        }
+
+        .god p {
+            font-size: 1rem;
+        }
+
+        .god a img {
+            width: 220px;
+            height: auto;
+            margin-top: 10px;
+            border-radius: 5px;
+            transition: transform 0.3s;
+        }
+
+        .god a img:hover {
+            transform: scale(1.05);
+        }
+
+        .demon {
+            position: relative;
+            background: url('banner.jpg') no-repeat center center/cover;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            text-align: left;
+            color: white;
+            width: 100%;
+            padding-left: 5%;
+        }
+
+        .demon::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)), 
+                        url('DEMONSLAYERHORIZONTAL.jpg') no-repeat center center/cover;
+            z-index: 0;
+        }
+
+        .slayer {
+            background: rgba(60, 60, 60, 0.7);
+            padding: 30px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            z-index: 1;
+            max-width: 500px;
+            box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.8);
+        }
+
+        .slayer h1 {
+            font-size: 2rem;
+        }
+
+        .slayer p {
+            font-size: 1rem;
+        }
+
+        .slayer a img {
+            width: 220px;
+            height: auto;
+            margin-top: 10px;
+            border-radius: 5px;
+            transition: transform 0.3s;
+        }
+
+        .slayer a img:hover {
+            transform: scale(1.05);
+        }
+
+        .demon::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)), 
+                        url('DEMONSLAYERHORIZONTAL.jpg') no-repeat center center/cover;
+            z-index: 0;
+        }
+
+        .slayer {
+            background: rgba(60, 60, 60, 0.7);
+            padding: 30px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            z-index: 1;
+            max-width: 500px;
+            box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.8);
+        }
+
+        .slayer h1 {
+            font-size: 2rem;
+        }
+
+        .slayer p {
+            font-size: 1rem;
+        }
+
+        .slayer a img {
+            width: 220px;
+            height: auto;
+            margin-top: 10px;
+            border-radius: 5px;
+            transition: transform 0.3s;
+        }
+
+        .slayer a img:hover {
+            transform: scale(1.05);
+        }
+
+        
+
+        .manga-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            padding: 40px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .manga-card {
+            background:transparent;
+            color: white;
+            text-decoration: none;
+            padding: 5px;
+            text-align: center;
+            border-radius: 8px;
+            box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.8);
+            transition: transform 0.3s;
+        }
+
+        .manga-card:hover {
+            transform: scale(1.05);
+        }
+
+        .manga-card img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        p, h1 {
+            text-align: center;
+        }
+
+        .sjw {
+    position: absolute;
+    right: 1%;
+    top: 50%;
+    transform: translateY(-50%);
+    max-width: 40%;
+    font-size: 1.2rem;
+    color: white;
+    background: rgba(0, 0, 0, 0.7); /* For better readability */
+    padding: 15px;
+    border-radius: 8px;
+    z-index: 2;
+    text-align: justify;
+}
+
+
+
+        html {
+            scroll-behavior: smooth;
+        }
+        footer{
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo" id="home">ANIME HAVEN</div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#manga">Manga</a></li>
+                <li><a href="#">Anime</a></li>
+                <li><a href="#">News</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>SOLO LEVELING</h1>
+            <a href="https://plutoscans.com/manga/solo-leveling/" target="_blank">
+                <img src="sololeveling1.webp" alt="sung jin woo">
+            </a>
+        </div>
+    </section>
+
+    <section class="tower">
+        <div class="god">
+            <h1>TOWER OF GOD</h1>
+            <a href="https://www.webtoons.com/en/fantasy/tower-of-god/list?title_no=95" target="_blank">
+                <img src="TOG.jpg" alt="TOG">
+            </a>
+        </div>
+    </section>
+
+    <section class="demon">
+        <div class="slayer">
+            <h1>DEMON SLAYER</h1>
+            <a href="https://plutoscans.com/manga/solo-leveling/" target="_blank">
+                <img src="DEMONSLAYER.jpg" alt="sung jin woo">
+            </a>
+        </div>
+    </section>
+
+    <section class="manga-grid" id="manga">
+        <a href="#" class="manga-card"><img src="THEBEGINNING.jpg" alt="The Beginning After The End"> The Beginning After The End</a>
+        <a href="#" class="manga-card"><img src="BLEACH.jpg" alt="Bleach"> Bleach</a>
+        <a href="#" class="manga-card"><img src="BLACKCLOVER.jpg" alt="Black Clover"> Black Clover</a>
+        <a href="#" class="manga-card"><img src="DEMONSLAYER.jpg" alt="Kimetsu No Yaiba"> Kimetsu No Yaiba</a>
+        <a href="#" class="manga-card"><img src="CHAINSAWMAN.jpg" alt="Chainsaw Man"> Chainsaw Man</a>
+        <a href="#" class="manga-card"><img src="ONEPIECE.webp" alt="One Piece"> One Piece</a>
+    </section>
+    <footer>
+        <hr>
+        <br>
+        <p>&copy; 2025 Anime Haven. All Rights Reserved</p>
+        <br>
+    </footer>
+</body>
+</html>
